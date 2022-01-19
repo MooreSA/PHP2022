@@ -9,7 +9,7 @@
 			$varFloat = 123123.123123;
 			$varString = "Hello World";
 			$varBool = true;
-			var_dump($varInt);
+			var_dump($varBool);
 			print "<p>Our float: $varFloat</p>";
 			echo "<p>Our float: $varFloat</p>";
 			echo "<p>Our String: $varString</p>";
