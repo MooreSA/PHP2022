@@ -1,11 +1,11 @@
 <?php
 
-var_dump($_POST['calc']);
 
 if(!isset($_POST['calc']) || empty($_POST['val1'])){
-    header("Location: 1calculate_form.html");
+    header("Location: 1calculate_form.html", true, 301);
     exit;
 } else{
+    var_dump($_POST['calc']);
 
     if(is_numeric($_POST['val1']) && is_numeric($_POST['val2'])){
 
