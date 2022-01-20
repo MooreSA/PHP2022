@@ -9,7 +9,7 @@
     $b = 15;
     echo "<p>Original value of \$a is $a and \$b is $b</p>";
     //test whether $a is equal to $b.
-    if ($a == $b) {
+    if ($a = $b) {
         echo "<p>TEST 1: \$a equals \$b</p>";
     } else {
         echo "<p>TEST 1: \$a is not equal to \$b</p>";

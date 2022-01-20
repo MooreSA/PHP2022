@@ -6,3 +6,4 @@
     echo "<br>Perhaps just the path ".__DIR__;
     echo "<br>This is line number ".__LINE__;
     echo "<br>I am using ". PHP_VERSION;
+    echo $_ENV['HTTP_USER_AGENT'];
