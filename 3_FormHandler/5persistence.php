@@ -11,18 +11,29 @@
     <h1>Persistence Demo</h1>
     <form action="5persistence.php">
         <?php
-        if (isset($_GET['counter'])) {
-            var_dump($_GET['counter']);
-            $counter = $_GET['counter'] + 1;
+
+
+        // var_dump($txtBoxCounter);
+
+        if (isset($_GET['txtBoxCounter'])) {
+            $txtBoxCounter = $_GET['txtBoxCounter']+1;
+            $hdnCounter = $_GET['hdnCounter']+1;
         } else {
-            $counter = 1;
+            $txtBoxCounter = 1;
+            $hdnCounter = 1;
         }
+  
         print <<<HERE
-        <input type="hidden" name="counter" value="$counter" />
-        <p>$counter</p>
-        <input type="submit" value="click to Increment" />
-        HERE;
+
+    <input type = "text" name = "txtBoxCounter" value = "$txtBoxCounter">
+
+    <input type = "hidden" name = "hdnCounter" value = "$hdnCounter">
+    <h3>The hidden value is $hdnCounter</h3>
+    <input type = "submit" value = "click to increment counters">
+HERE;
+
         ?>
+
     </form>
 </body>
 

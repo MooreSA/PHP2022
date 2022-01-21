@@ -1,8 +1,9 @@
 <?php
 
+// var_dump($_POST['calc']);
 
-if(!isset($_POST['calc']) || empty($_POST['val1'])){
-    header("Location: 1calculate_form.html", true, 301);
+if(!isset($_GET['calc']) || empty($_GET['val1'])){
+    header("Location: 1calculate_form.html");
     exit;
 } else{
     var_dump($_POST['calc']);
