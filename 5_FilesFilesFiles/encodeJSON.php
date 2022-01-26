@@ -39,11 +39,14 @@ $userArray = [
 ];
 
 var_dump($userArray);
+echo "<br>";
+echo "<br>";
 
 // Convert Array to JSON String
 $userJSON = json_encode($userArray);
 echo $userJSON;
 
+echo "<br>";
 echo "<br>";
 
 $partJSON = json_encode($partArray);
