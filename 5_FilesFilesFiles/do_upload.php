@@ -4,7 +4,8 @@
 // 	echo "Sorry, your file is too large.";
 // 	$uploadOk = 0; }
 if ($_FILES['img1'] != "") {
-    @copy($_FILES['img1']['tmp_name'], "../files/img/".$_FILES['img1']['name']) 
+    
+    copy($_FILES['img1']['tmp_name'], "./img/".$_FILES['img1']['name']) 
         or die("Couldn't copy the file.");
 } else {
         die("No input file specified");

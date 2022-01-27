@@ -1,9 +1,9 @@
 <?php
 //configure php.ini
-// echo ini_get('SMTP');	
+echo ini_get('SMTP');	
 ini_set('SMTP','myserver');
 ini_set('smtp_port',25);
-// echo ini_get('SMTP');
+echo ini_get('SMTP');
 
 
 //Check if the form is submitted and complete
