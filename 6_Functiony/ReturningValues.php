@@ -44,7 +44,7 @@ function Chinese_zodiac($year) {
     }
 }
   
-  $zodiac = Chinese_zodiac(2020);
-  echo "2020 is the year of the {$zodiac}.<br>";
+  $zodiac = Chinese_zodiac(2022);
+  echo "2022 is the year of the {$zodiac}.<br>";
 
   echo "2027 is the year of the " . Chinese_zodiac(2027) . ".<br>";

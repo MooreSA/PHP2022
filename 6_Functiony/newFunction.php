@@ -1,7 +1,7 @@
 <?php
 
 // --------------------------------
-// -- Creating Functions
+// -- Creating User Defined Functions
 // --------------------------------
 
 

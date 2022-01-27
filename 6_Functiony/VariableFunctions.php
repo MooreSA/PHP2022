@@ -19,7 +19,7 @@ $variableFunctionName = "getAuthor"; // string name is actually a function call
 $variableFunctionName();  // variable holds the string value of the function name. Adding the () allows you to call it.
 
 /*
-Let's not forget variable scope... what happens when you set a variable within a function?
+Let's not forget variable scope... what happens when you set a variable within a function? https://www.php.net/manual/en/language.variables.scope.php
 */
 
 $authorName = "Billy Shakes";
