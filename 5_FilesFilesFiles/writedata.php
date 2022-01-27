@@ -1,5 +1,5 @@
 <?php
-$filename = "../files/txt/newfile.txt";
+$filename = "../newfile.txt";
 $newstring = "
     Check it out!\n
     I've created a new file and stuck all this text into it!"; 

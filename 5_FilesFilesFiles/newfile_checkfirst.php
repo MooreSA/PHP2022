@@ -1,5 +1,5 @@
 <?php
-$filename = "../files/txt/newfile.txt";
+$filename = "../txt/newfile.txt";
 if (file_exists($filename)) {
     $msg = "<p>File already exists.</p>";
 } else {
