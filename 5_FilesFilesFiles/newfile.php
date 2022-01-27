@@ -1,5 +1,5 @@
 <?php
-$filename = "../files/txt/newfile.txt";
+$filename = "../newfile.txt";
 $newfile = fopen($filename, "w+") or exit("Exit: Couldn't create file.");
 fclose($newfile);
 $msg = "<p>File created!</p>";

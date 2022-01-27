@@ -22,7 +22,7 @@
     echo "<h2>Counting by 5</h2>";
     for ($i = 5; $i <= 50; $i+= 5){
         print "$i <br>\n";
-        if ($i == 45) {
+        if ($i == 30) {
             break; //continue can be used to break a single iteration of the loop
           }
     } // end for loop

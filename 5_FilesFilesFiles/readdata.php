@@ -1,5 +1,5 @@
 <?php
-$filename = "../files/txt/data.json";
+$filename = "../newfile.txt";
 $whattoread = @fopen($filename, "r") or die("Couldn't open file");
 $file_contents = fread($whattoread, filesize($filename)); //also, check out fgets(), fgetss(), fgetc() & fgetcsv()
 $new_file_contents = nl2br($file_contents);

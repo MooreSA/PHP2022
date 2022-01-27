@@ -1,5 +1,5 @@
 <?php
-$filename = "../files/txt/newfile.txt";
+$filename = "../newfile.txt";
 $success = @unlink($filename) or die("Dead: Couldn't delete file.");
 if ($success) {
     $msg = "Deleted $filename";

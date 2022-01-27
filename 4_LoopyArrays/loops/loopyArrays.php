@@ -16,7 +16,7 @@
     //output array values
     print "<h3>Matt's Bike Collection</h3>\n";
     
-    for ($i = 0; $i <= 4; $i++){
+    for ($i = 0; $i <= 3; $i++){
         print "$i: $bikes[$i]<br>\n";
     } //notice this produces an undefined offset in the case that we don't specify the exact number of items
 
