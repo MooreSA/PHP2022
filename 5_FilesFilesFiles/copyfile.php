@@ -1,6 +1,6 @@
 <?php
-$orig_filename = "../files/txt/newfile.txt";
-$new_filename = "../files/txt/booimadeacopy.txt";
+$orig_filename = "../newfile.txt";
+$new_filename = "../booimadeacopy.txt";
 $success = @copy($orig_filename, $new_filename) or die("Couldn't copy file.");
 if ($success) {
     $msg = "Copied $orig_filename to $new_filename";
@@ -19,4 +19,3 @@ if ($success) {
     <?php echo "$msg"; ?>
 </body>
 </html>
-

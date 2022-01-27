@@ -19,7 +19,7 @@
 
         //Creating arrays with a single value
         $bikes = array('MTB');
-        $bikes = ['BMX'];
+        // $bikes = ['BMX'];
         
         //Let's check it:
         print_r($bikes);
