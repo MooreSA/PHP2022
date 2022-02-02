@@ -3,7 +3,7 @@
     $dblist = "";
     // Initial query to get databases
     $sql="SHOW DATABASES";
-    $connection = mysqli_connect("localhost", "root", "") or die('Error connecting to mysql: ' . mysqli_error($link));
+    $connection = mysqli_connect("db", "root", "password") or die('Error connecting to mysql: ' . mysqli_error($link));
     //require_once './dbconnect.php';
     $result = mysqli_query($connection, $sql);
 
@@ -16,7 +16,7 @@
         //second query to get tables
         $sqlT="SHOW TABLES";
         // new connection to select database
-        $con = mysqli_connect("localhost", "root", "", $dbname) or die ('Error connecting to mysql: ' . mysqli_error($con));
+        $con = mysqli_connect("db", "root", "password", $dbname) or die ('Error connecting to mysql: ' . mysqli_error($con));
         $resultT=mysqli_query($con, $sqlT) or die ('Error query: ' . mysqli_error($connection));
         // add database to output
         $dblist .= "<h4>".$dbname."</h4>";  

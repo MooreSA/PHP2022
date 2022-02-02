@@ -4,7 +4,7 @@
 $db_list = "<ul>";
 // Initial query to get databases
 $sql="SHOW DATABASES";
-$connection = mysqli_connect("localhost", "root", "") or die ('Error connecting to mysql: ' . mysqli_error($Connection));
+$connection = mysqli_connect("db", "root", "password") or die ('Error connecting to mysql: ' . mysqli_error($Connection));
 $result = mysqli_query($connection, $sql);
 
 // identify rows in query result

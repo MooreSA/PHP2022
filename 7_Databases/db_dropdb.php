@@ -1,6 +1,6 @@
 <?php
-$sql = "DROP DATABASE test";
-$connection = mysqli_connect("localhost", "root", "") 
+$sql = "DROP DATABASE music";
+$connection = mysqli_connect("db", "root", "password") 
     or die(mysqli_error($connection));
 $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
 if ($result) {
