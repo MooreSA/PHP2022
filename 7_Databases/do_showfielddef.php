@@ -45,11 +45,14 @@ $formBlock .= "<tr>
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Create a Database Table: Step 2</title>
 </head>
+
 <body>
     <h1>Define fields for <?php echo "$_POST[table_name]"; ?></h1>
     <?php echo "$formBlock"; ?>
 </body>
+
 </html>

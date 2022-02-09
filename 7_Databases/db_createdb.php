@@ -1,6 +1,6 @@
 <?php
 $sql = "CREATE DATABASE music";
-$connection = mysqli_connect("localhost", "root", "") 
+$connection = mysqli_connect("db", "root", "password") 
         or die(mysqli_error($connection));
 $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
 if ($result) {
@@ -10,10 +10,13 @@ if ($result) {
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Create a MySQL Database</title>
 </head>
+
 <body>
     <?php echo "$msg"; ?>
 </body>
+
 </html>
