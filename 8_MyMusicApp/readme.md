@@ -6,3 +6,4 @@
 - artist_ln, varchar, 100
 - rec_label, varchar, 50
 - my_notes, text, 150
+- date_acq, varchar, 15

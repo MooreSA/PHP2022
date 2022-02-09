@@ -2,8 +2,8 @@
 	$db_name = "music";
 	$table_name = "my_music";
     $display_block = "";
-	$connection = @mysqli_connect("localhost", "root", "") 
-	     or die(mysql_error());
+	$connection = @mysqli_connect("db", "root", "password") 
+	     or die(mysqli_error($connection));
 	$db = @mysqli_select_db($connection, $db_name) or die(mysqli_error($connection));
 	$sql = "SELECT id, format, title, trim(concat(artist_fn,' ',artist_ln)) as
 	  artist_fullname, rec_label, my_notes, date_acq FROM $table_name 

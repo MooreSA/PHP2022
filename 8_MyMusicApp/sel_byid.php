@@ -2,7 +2,7 @@
 	$db_name = "music";
 	$table_name = "my_music";
     $display_block = "";
-	$connection = @mysqli_connect("localhost", "root", "")
+	$connection = @mysqli_connect("db", "root", "password")
 	     or die(mysqli_error($connection));
 	$db = @mysqli_select_db($connection, $db_name) or die(mysqli_error($connection));
 	$sql = "SELECT id, format, title, artist_fn, artist_ln, rec_label, 
