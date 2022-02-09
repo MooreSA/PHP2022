@@ -1,5 +1,5 @@
 <?php
-$sql = "CREATE DATABASE music";
+$sql = "CREATE DATABASE music;";
 $connection = mysqli_connect("db", "root", "password") 
         or die(mysqli_error($connection));
 $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));

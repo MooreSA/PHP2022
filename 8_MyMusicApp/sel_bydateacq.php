@@ -3,8 +3,7 @@ require('db_connect.php');
 
 $table_name = "my_music";
 $display_block = "";
-
-$sql = "SELECT * FROM $table_name ORDER BY date_acq DESC";
+$sql = "SELECT * FROM $table_name ORDER BY date_acq DESC;";
 $result = @mysqli_query($connection, $sql) or die(mysqli_error($connection));
 while ($row = mysqli_fetch_array($result)) {
     $id = $row['id'];
