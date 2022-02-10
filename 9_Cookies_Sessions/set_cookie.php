@@ -1,5 +1,5 @@
 <?php
-$cookie_name = "test_cookie";
+$cookie_name = "test_cookie2";
 $cookie_value = "test string!";
 $cookie_expire = time()+86400;
 $cookie_domain = "setdomain.ifneeded.com"; //browsers use this to organize your cookies and will often assign one
