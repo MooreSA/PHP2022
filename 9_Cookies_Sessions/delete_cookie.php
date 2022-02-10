@@ -1,4 +1,5 @@
 <?php
+// echo time();
 $cookie_name = "test_cookie";
 $cookie_value = "";
 $cookie_expire = time()-3600;
@@ -27,7 +28,6 @@ time()+2592000 30 days from the current time
     <?php
         if(!isset($_COOKIE[$cookie_name])) {
                 echo "Cookie named '" . $cookie_name . "' is not set!";
-                echo time();
         } else {
                 echo "Cookie '" . $cookie_name . "' is set!<br>";
                 echo "Value is: " . $_COOKIE[$cookie_name];

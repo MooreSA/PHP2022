@@ -2,7 +2,7 @@
 //start a session
 session_start();
 //check for stored values and register defaults
-if ((!$_SESSION['font_family']) || (!$_SESSION['font_size'])) {
+if (@(!$_SESSION['font_family']) || (!$_SESSION['font_size'])) {
         $font_family = "sans-serif";
         $font_size = "10";
         $_SESSION['font_family'] = $font_family;
