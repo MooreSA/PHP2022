@@ -1,21 +1,23 @@
 <?php
+require("./require_login.php");
 //check for required fields
 if ((!$_POST['id']) || (!$_POST['format']) || (!$_POST['title'])) {
         header("Location: /show_addrecord.html");
         exit;
 }
 
-$table_name = "my_music";
+$table_name = "music";
 
 //connect to MySQL and select database to use
 require("db_connect.php");
 
+var_dump($con);
 // prepare SQL
 
 
 $stmt = $con->prepare(
     "INSERT INTO $table_name 
-        (id, format, title, artist_fn, artist_ln, rec_label, my_notes, date_acq) 
+        (music_id, format, title, artist_fn, artist_ln, rec_label, my_notes, date_acq) 
     VALUES 
         (?, ?, ?, ?, ?, ?, ?, ?)");
 
