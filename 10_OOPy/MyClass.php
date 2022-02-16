@@ -11,7 +11,7 @@ class MyClass
 $obj = new MyClass;
  
  //to see the contents
- var_dump($obj);
+ //var_dump($obj);
 
  //or 
 

@@ -25,7 +25,7 @@ class MyClass {
     }
  
     //change to protected
-    protected function getProperty() {
+    private function getProperty() {
         return $this->prop1 . "<br />";
     }
 }
